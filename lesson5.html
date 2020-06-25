@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table {
+        width: 100%;
+        height: 300px;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid black;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .test {
+        height: 50px;
+        width: 10%;
+        border: solid 1px black;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>1. Что такое ol, ul и li?</p>
+<p>Нумерованный список, маркированный список, элемент списка</p>
+<p>2. Сверстать сложную таблицу с объединением строк и столбцов.</p>
+<table>
+    <tr>
+        <td rowspan="3">Lorem ipsum dolor sit amet.</td>
+        <td colspan="4">Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td colspan="2">Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td colspan="2">Lorem ipsum dolor sit amet.</td>
+    </tr>
+    <tr>
+        <td colspan="3">Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+        <td>Lorem ipsum dolor sit amet.</td>
+    </tr>
+</table>
+<p>3. В каком регистре лучше писать HTML-код?</p>
+<p>В нижнем регистре</p>
+<p>4. Как убрать синюю рамку вокруг картинки-ссылки?</p>
+<p>
+    a img { <br>
+    border: none; <br>
+    }
+</p>
+<p>5. Обязательно ли писать alt в img?</p>
+<p>Нет, однако желательно для поисковых систем и людей с ограниченными возможностями</p>
+<p>6. Что такое html-entities?</p>
+<p>Функция преобразования символов в html код</p>
+<p>7. Как убрать подчеркивание для всех ссылок на странице?</p>
+<p>
+    a { <br>
+    text-decoration: none; <br>
+    }
+</p>
+<p>8. Что делает свойство clear?</p>
+<p>Свойство запрещает обтекание элемента с определенных сторон</p>
+<p>9. Есть ячейка таблицы, в ней 3 дива, в каждом диве – по слову. На первый див применен стиль float: left; на третий –
+    float: right. Что нужно применить на второй див, чтобы все три надписи/дивы были в одной горизонтальной строке, то
+    есть первый имел бы выравнивание по левому краю, третий – по правому, а второй – по центру?</p>
+<table>
+    <tr>
+        <td>
+            <div class="test" style="float: left">
+                один</div>
+            <div class="test" style="display: inline-block;">
+                два</div>
+            <div class="test" style="float: right">
+                три</div>
+        </td>
+    </tr>
+</table>
+<p>10. Перечислить по пять знакомых вам псевдоклассов и псевдостилей с указанием их функционала.</p>
+
+<ul> <p>Псевдоклассы:</p>
+    <li>:hover - используется при наведении на элемент</li>
+    <li>:focus - используется при фокусе на элементе</li>
+    <li>:first-child - первый дочерний элемент</li>
+    <li>:last-child - последний дочерний элемент</li>
+    <li>:right - правый элемент</li>
+</ul>
+<ul> <p>Псевдостили</p>
+    <li>:after - используется при добавлении контента до элемента</li>
+    <li>:before - используется при добавлении контента после элемента</li>
+</ul>
+</div>
+</body>
+</html>
